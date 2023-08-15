@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: #333;
+    margin-bottom: 3em;
     
 }
 
@@ -42,6 +43,17 @@ body{
 
 @media only screen and (max-width: 500px) {
     .c-nav__desktop{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 501px) {
+    .c-nav__desktop{
+        display: flex;
+    }
+
+    .c-nav__mobile{
         display: none;
     }
     
@@ -109,7 +121,7 @@ body{
 }
 
 
-button{
+.c-hero__newsletter button{
     position: absolute;
     top: 0;
     right: 0;
@@ -119,4 +131,59 @@ button{
     border-radius: 12px;
     background: #2D9CDB;
     color: #fff;
+    cursor: pointer;
+}
+
+.c-services h1{
+    
+    width: 300px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.c-card{
+    padding: 2em;
+    max-width: 341px;
+    max-height: 422px;  
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.c-card__icon{
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+    background: #2D9CDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.c-card h2{
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.c-card p{
+    color:#4F4F4F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.c-card button{
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background: #E0E0E0;
+    width: 116px;
+    height: 42px;   
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+
 }
