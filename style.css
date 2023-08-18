@@ -41,14 +41,14 @@ body{
     font-weight: 500;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
     .c-nav__desktop{
         display: none;
     }
     
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 901px) {
     .c-nav__desktop{
         display: flex;
     }
@@ -66,6 +66,7 @@ body{
     flex-direction: column;
     gap: 1em;
 }
+
 .c-hero span{
     padding-left: 2rem;
     color: #2D9CDB;
@@ -132,6 +133,38 @@ body{
     background: #2D9CDB;
     color: #fff;
     cursor: pointer;
+}
+
+@media only screen and (min-width:900px) {
+
+    
+    .c-hero h1{
+        font-size: 36px;
+        width: 450px;
+        padding-left: 7rem;
+    }
+
+    .c-hero span{
+
+        padding-left: 7rem;
+    }
+
+    .c-hero p{
+        width: 350px;
+        padding-left: 7rem;
+    }
+
+    .c-hero__newsletter{
+        width: 350px;
+        padding-left: 7rem;
+    }
+
+    .c-hero__newsletter p{
+        padding-left: 0;
+        margin-bottom: .5em;
+    }
+
+    
 }
 
 /*---------------------SERVICES STYLES------------------*/
