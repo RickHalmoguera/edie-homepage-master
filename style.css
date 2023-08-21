@@ -256,8 +256,7 @@ body{
 
 .c-designs{
     margin-top: 2em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 2em;
 }
 
@@ -270,9 +269,16 @@ body{
     
 }
 
+.c-designs__card{
+    
+}
+
+
+
 .c-designs__card img{
     border-radius: 30px;
-    max-width: 534px;
+    width: 100%;
+
 }
 
 .c-designs__card p{
@@ -283,8 +289,8 @@ body{
 
 .c-designs__card h3{
     color:#333;
-font-size: 18px;
-font-weight: 500;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .c-designs__link p{
@@ -293,7 +299,30 @@ font-weight: 500;
     font-weight: 500;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1150px) {
+
     .c-designs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+
+    .c-designs__card{
+        height: 850px;
+    }
+
+    .up{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .down{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    
+
+    
 }
