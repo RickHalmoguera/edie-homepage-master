@@ -297,6 +297,7 @@ body{
     color: #2D9CDB;
     font-size: 24px;
     font-weight: 500;
+    margin-top: 2em;
 }
 
 @media only screen and (min-width:730px) {
@@ -321,8 +322,87 @@ body{
         flex-direction: column;
         justify-content: flex-end;
     }
+}
 
-    
+/*-------------------TEAM STYLES---------------*/
 
-    
+.c-team{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.c-team__text p {
+    color: #EB5757;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.c-team__text h1{
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.c-team__text span{
+    color:#4F4F4F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.c-team__gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "person3 person1"
+    "person3 person2";
+}
+
+.c-team__gallery img{
+    border-radius: 24px;
+    width: 100%;
+}
+.person1{ grid-area: person1;}
+.person2{ grid-area: person2;}
+.person3{ 
+    grid-area: person3;
+    align-self: center;
+}
+
+.c-team__testimony{
+    color:#333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.c-team__card{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.c-team__card img{
+    border-radius: 24px;
+    width: 135px;   
+}
+
+.c-card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.c-card__text p{
+    color:#333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.c-card__text span{
+    color: #828282;
+    font-size: 18px;
+    font-weight: 500;
 }
