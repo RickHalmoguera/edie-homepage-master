@@ -299,7 +299,7 @@ body{
     font-weight: 500;
 }
 
-@media only screen and (min-width:1150px) {
+@media only screen and (min-width:730px) {
 
     .c-designs{
         grid-template-columns: 1fr 1fr;
